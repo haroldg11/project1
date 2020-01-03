@@ -5,8 +5,6 @@ import { Video } from '../video';
   selector: 'app-videolist',
   templateUrl: './videolist.component.html',
   styleUrls: ['./videolist.component.css'],
-  // tslint:disable-next-line: no-inputs-metadata-property
-  inputs: ['videos'],
   // tslint:disable-next-line: no-outputs-metadata-property
   outputs: ['SelectVideo']
 })
