@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(__dirname + '/dist/jusswebsite'));
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
