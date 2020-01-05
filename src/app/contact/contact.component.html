@@ -209,24 +209,23 @@
           Submit
         </button>
       </form>
-      <div class="text-center"></div>
     </div>
     <br />
     <br />
-    <div class="text-right">
       <div class="col-lg-6">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.4380169256738!2d-79.76206568459081!3d43.59742076405409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6a6034f9d6fd%3A0x54a4c4bffc5900d8!2s6981%20Millcreek%20Dr%20%2337%2C%20Mississauga%2C%20ON%20L5N%206B8!5e0!3m2!1sen!2sca!4v1574137656391!5m2!1sen!2sca"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border:0;"
-          allowfullscreen=""
-        ></iframe>
+        <div class="responsive" style=" position: relative; overflow: hidden;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.4380169256738!2d-79.76206568459081!3d43.59742076405409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6a6034f9d6fd%3A0x54a4c4bffc5900d8!2s6981%20Millcreek%20Dr%20%2337%2C%20Mississauga%2C%20ON%20L5N%206B8!5e0!3m2!1sen!2sca!4v1574137656391!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
       </div>
     </div>
   </div>
-</div>
 <br />
 <br />
 <div
@@ -247,29 +246,51 @@
             JUSSIMPLE
           </h4>
           <br />
-          <p routerLink="/Start" routerLinkActive="router-link-active" style="cursor: pointer;">
+          <p
+            routerLink="/Start"
+            routerLinkActive="router-link-active"
+            style="cursor: pointer;"
+          >
             Start
           </p>
           <br />
-          <p routerLink="/About"
-          routerLinkActive="router-link-active"
-          style="cursor: pointer;">
+          <p
+            routerLink="/About"
+            routerLinkActive="router-link-active"
+            style="cursor: pointer;"
+          >
             Videos
           </p>
           <br />
-          <p routerLink="/Setup" routerLinkActive="router-link-active" style="cursor: pointer;">
+          <p
+            routerLink="/Setup"
+            routerLinkActive="router-link-active"
+            style="cursor: pointer;"
+          >
             Setup
           </p>
           <br />
-          <p routerLink="/About" routerLinkActive="router-link-active" style="cursor: pointer;">
+          <p
+            routerLink="/About"
+            routerLinkActive="router-link-active"
+            style="cursor: pointer;"
+          >
             About
           </p>
           <br />
-          <p routerLink="/FAQ" routerLinkActive="router-link-active" style="cursor: pointer;">
+          <p
+            routerLink="/FAQ"
+            routerLinkActive="router-link-active"
+            style="cursor: pointer;"
+          >
             Faq
           </p>
           <br />
-          <p routerLink="/Contact" routerLinkActive="router-link-active" style="cursor: pointer;">
+          <p
+            routerLink="/Contact"
+            routerLinkActive="router-link-active"
+            style="cursor: pointer;"
+          >
             Contact Us
           </p>
           <br />
@@ -350,12 +371,25 @@
           <br />
           <br />
           <div class="input-group">
-            <form #form="ngForm" [formGroup]="subForm" (ngSubmit)="sendSubMail()" class="form-inline">
+            <form
+              #form="ngForm"
+              [formGroup]="subForm"
+              (ngSubmit)="sendSubMail()"
+              class="form-inline"
+            >
               <label for="emailiNp"></label>
-              <input type="text" class="form-control" id="emailiNp"  formControlName="Email" />
-                <button class="btn btn-info btn-outline-success" [disabled]="form.invalid">
-                  Subscribe
-                </button>
+              <input
+                type="text"
+                class="form-control"
+                id="emailiNp"
+                formControlName="Email"
+              />
+              <button
+                class="btn btn-info btn-outline-success"
+                [disabled]="form.invalid"
+              >
+                Subscribe
+              </button>
             </form>
           </div>
           <br />
