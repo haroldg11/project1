@@ -6,6 +6,8 @@ const xoauth2 = require("xoauth2");
 const cors = require('cors');
 const api = require('./server/routes/api');
 
+app.use(cors());
+
 const host = '0.0.0.0';
 const port = process.env.PORT || 3000;
 
