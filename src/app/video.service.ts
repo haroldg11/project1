@@ -7,7 +7,7 @@ import { Video } from './video';
   providedIn: 'root'
 })
 export class VideoService {
-  private _getUrl = 'https://jussimpletrading.herokuapp.com//api/videos';
+  private _getUrl = 'http://localhost:80/api/videos';
 
   constructor(private _http: HttpClient) { }
 
