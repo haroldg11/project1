@@ -3,7 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const Video = require('../models/video');
 
-const db = "process.env.MONGODB_URL"
+const db = "mongodb+srv://jussimpletrading:italian123@videos-wezhg.mongodb.net/test?retryWrites=true&w=majority"
 mongoose.Promise = global.Promise;
 mongoose.connect(db, { useNewUrlParser: true,  dbName: "videoplayer" }, function(err){
   if(err){
